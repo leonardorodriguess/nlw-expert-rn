@@ -1,5 +1,5 @@
-import { Text, View } from "react-native";
-import { Header } from "../components/header";
+import { Header } from "@/components/header";
+import { View } from "react-native";
 
 export default function Home() {
   return (

@@ -7,6 +7,7 @@ import {
   Inter_600SemiBold,
   Inter_700Bold
 } from "@expo-google-fonts/inter";
+import { Loading } from "../components/loading";
 
 export default function Layout () {
   const [fontsLoaded] = useFonts({
@@ -15,7 +16,12 @@ export default function Layout () {
     Inter_600SemiBold,
     Inter_700Bold
   })
+  if(!fontsLoaded) {
+    return <Loading />
+  }
   return (
+
+    
     <SafeAreaView className="flex-1">
       <Slot />
     </SafeAreaView>

@@ -1,9 +1,9 @@
 import { Text, View } from "react-native";
 
-export default function Home () {
+export default function Home() {
   return (
-    <View>
-      <Text>Hello react native</Text>
+    <View className="bg-slate-900 flex-1">
+      <Text className="text-white">Hello react native</Text>
     </View>
-  )
+  );
 }
